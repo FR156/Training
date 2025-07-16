@@ -19,7 +19,7 @@ function getFileExtension($filename) {
 
 // Check if admin (simulated for demo)
 function isAdmin() {
-    // VULNERABILITY: No real authentication system
-    return isset($_GET['admin']) && $_GET['admin'] == 'true';
+    require_once 'session.php';
+    return \isAdmin();
 }
 ?>

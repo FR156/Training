@@ -2,6 +2,8 @@
 require_once '../includes/config.php';
 require_once '../includes/db.php';
 require_once '../includes/functions.php';
+require_once '../includes/session.php';
+requireAdmin(); // This will redirect non-admins
 
 // Simulated admin check - VULNERABILITY: No real authentication
 if (!isAdmin()) {
