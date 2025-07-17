@@ -30,6 +30,10 @@ $user = $conn->query("SELECT * FROM users WHERE id = $userId")->fetch_assoc();
     <link rel="stylesheet" href="assets/css/output.css">
 </head>
 <body class="bg-gray-100">
+    <?php
+        $pageTitle = "File Upload";
+        require_once '../includes/header.php';
+    ?>
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold text-blue-800 mb-6">User Profile</h1>
         

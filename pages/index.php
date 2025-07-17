@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="assets/css/output.css">
 </head>
 <body class="bg-gray-100">
+    <?php
+        $pageTitle = "File Upload";
+        require_once '../includes/header.php';
+    ?>
     <div class="container mx-auto px-4 py-8">
         <header class="mb-8">
             <h1 class="text-3xl font-bold text-blue-800">File Upload Vulnerabilities Demo</h1>
